@@ -10,7 +10,7 @@
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body style = "background-color: #ebf3ff;">
+<body style = "background-color: #ebf3ff;" onload="loadExistingCards()">
   
   <!-- Modal -->
   <div class="modal fade" id="newTask" tabindex="-1" aria-labelledby="newTaskLabel" aria-hidden="true">
@@ -40,7 +40,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="addNewCard()" data-bs-dismiss="modal">Save changes</button>
         </div>
       </div>
     </div>
@@ -78,26 +78,7 @@
         </section>
 
         <!-- Task Container -->
-        <section class = "task__container row">
-            <div class="col-md-6 col-lg-4 my-4">
-                <div class="card">
-                    <div class="card-header gap-1 d-flex justify-content-end">
-                      <button class = "btn btn-outline-info"><i class = "fal fa-pencil"></i></button>
-                      <button class = "btn btn-outline-danger"><i class = "far fa-trash-alt"></i></button>
-                    </div>
-                    <div class="card-body">
-                      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg" alt="image" class = "card-img">
-                      <h5 class="card-title mt-4">Task Title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <span class="badge bg-primary">New</span>
-                    </div>
-                    <div class="card-footer">
-                      <button class = "btn btn-outline-primary">Open Task</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+        <section class = "task__container row"></section>
     </main>
 
     <!-- JavaScript Bundle with Popper -->
