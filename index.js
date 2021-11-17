@@ -103,5 +103,3 @@ const deleteCard = (event) => {
 
 //parse
 //JSON -> JS Object
-
-//test
